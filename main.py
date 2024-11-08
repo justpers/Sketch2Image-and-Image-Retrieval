@@ -12,7 +12,7 @@ from loguru import logger
 from collections import Counter
 from types import SimpleNamespace
 from torchvision import transforms
-from DINO.ImageRetrieval_class import ImageRetrieval
+from dino.ImageRetrieval_class import ImageRetrieval
 from PIL import Image, ImageOps, ImageDraw, ImageFont
 from transformers import BlipForConditionalGeneration, AutoProcessor
 
