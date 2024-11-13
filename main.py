@@ -18,6 +18,27 @@ from aircanvas.HandTrackingModule import sketch
 from dino.ImageRetrieval_class import ImageRetrieval
 from PIL import Image, ImageOps, ImageDraw, ImageFont
 from transformers import BlipForConditionalGeneration, AutoProcessor
+import subprocess
+
+# ADB를 통해 안드로이드 장치에서 DCIM/Camera 폴더 내의 jpg 파일들을 database 폴더로 복사
+def copy_images_from_galaxy(source_folder="/sdcard/DCIM/Camera", destination_folder="database"):
+    os.makedirs(destination_folder, exist_ok=True)
+    try:
+        file_list = subprocess.check_output(['adb', 'shell', 'ls', source_folder]).decode().splitlines()
+    except subprocess.CalledProcessError as e:
+        print("Error fetching file list:", e)
+        exit()
+
+    for file in file_list:
+        if file.endswith(".jpg"):
+            try:
+                subprocess.run(['adb', 'pull', f"{source_folder}/{file}", destination_folder], check=True)
+                print(f"Copied {file} to {destination_folder}")
+            except subprocess.CalledProcessError as e:
+                print(f"Failed to copy {file}: {e}")
+                
+# 갤럭시에서 이미지를 받아와서 database 폴더에 저장
+copy_images_from_galaxy()
 
 # AirCanvas 실행
 sketch()
@@ -65,6 +86,9 @@ args = SimpleNamespace(**{
     'disable_cache': False,
     'model_path': None
 })
+
+retriever = ImageRetrieval(args)
+retriever.run(args)
 
 retriever = ImageRetrieval(args)
 retriever.run(args)
