@@ -1,4 +1,5 @@
 import os
+import cv2
 import sys
 import PIL
 import torch
@@ -7,14 +8,19 @@ import appdirs
 import numpy as np
 from PIL import Image
 from tqdm import tqdm
+import mediapipe as mp
 from pathlib import Path
 from loguru import logger
 from collections import Counter
 from types import SimpleNamespace
 from torchvision import transforms
+from aircanvas.HandTrackingModule import sketch
 from dino.ImageRetrieval_class import ImageRetrieval
 from PIL import Image, ImageOps, ImageDraw, ImageFont
 from transformers import BlipForConditionalGeneration, AutoProcessor
+
+# AirCanvas 실행
+sketch()
 
 # Device 설정
 device = "cuda" if torch.cuda.is_available() else "cpu"

@@ -192,16 +192,16 @@ class ImageRetrieval:
         for idx, img_idx in enumerate(closest_indices):
             img_path = database_img_paths[img_idx]
             similarity = sorted_distances[idx]
-            logger.debug(
-                f"{idx}th similar image is {img_path}"
-            )
+            logger.debug(f"{idx}th similar image is {img_path}")
+            
+            similar_img_save_path = img_save_folder / f"retrieved_{idx}.png"
+            Image.open(img_path).save(similar_img_save_path)
+            
             cur_img = Image.open(img_path)
             cur_img = self.process_image_for_visualization(args, cur_img)
-
             vis_img_list.append(cur_img)
 
         out_img = self.create_output_image(vis_img_list, database_img_paths, closest_indices, sorted_distances, args)
-
         out_img.save(str(img_save_path))
 
     def create_output_image(self, vis_img_list, database_img_paths, closest_indices, sorted_distances, args):
