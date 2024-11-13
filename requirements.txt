@@ -1,3 +1,5 @@
+mediapipe
+
 transformers @ git+https://github.com/huggingface/transformers.git@main
 
 clip @ git+https://github.com/openai/CLIP.git
