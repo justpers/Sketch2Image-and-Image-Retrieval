@@ -43,9 +43,10 @@
 
 **4. DINOv2 (Distillation of Knowledge with Neural Operators)**:
    - ViT-H/16모델을 사용해 임베딩 생성
-   - 코사인 유사도를 사용해 이미지 간 거리를 계산해 의미론적으로 가까운~
+   - 코사인 유사도를 사용해 이미지 간 거리를 계산해 의미론적으로 비슷한 이미지들을 가깝게 배치
      
      ![DINO Inference](README_image/dino_inf.jpeg)
+
 ## 프로젝트 환경
 **1. 하드웨어 사양**
   - GPU:
@@ -72,8 +73,8 @@
 
 - [다운로드](https://drive.google.com/drive/folders/16tHzOjyHXhN-VVOLXzvbGTfwh5uv1Sff?usp=sharing)
 
-  ## 실행 방법
- 1. **환경 설정**:
+## 실행 방법
+1. **환경 설정**:
    - 깃허브 내용을 다운받습니다.
       ```bash
        git clone https://github.com/justpers/Sketch2Image-and-ImageRetrieval.git
