@@ -27,7 +27,7 @@
    - 멀티모달 모델로, 스케치에 대한 캡션 생성
    - 생성된 캡션을 디퓨전 모델의 프롬프트로 사용
 
-초기 BLIP 인퍼런스 도출 시, 아래 왼쪽 그림과 같이 'a drawing of ~'로 캡셔닝 되어, 이것을 디퓨전 모델에 넣었을 때 그림체 느낌의 이미지가 생성되었습니다. 하지만 저희 팀은 고품질 이미지가 생성되기를 원했기 때문에, 실험을 통해 고품질 이미지로 변환할 수 있는 문장을 알아내고자 했고, 'Convert a [class] into a high-resolution color image with a white backgroud' 라는 문장을 찾았습니다. 따라서 스케치를 넣었을 때 해당 캡션이 생성되도록 Sketchy Dataset의 Sketch와 그에 대한 캡션으로 데이터셋을 만들어 이것으로 BLIP을 파인튜닝하였습니다. 그 결과 스케치에 대한 캡션과 생성된 이미지는 아래 오른쪽 그림과 같이 나왔습니다.
+ 초기 BLIP 인퍼런스 도출 시, 아래 왼쪽 그림과 같이 'a drawing of ~'로 캡셔닝 되어, 이것을 디퓨전 모델에 넣었을 때 그림체 느낌의 이미지가 생성되었습니다. 하지만 저희 팀은 고품질 이미지가 생성되기를 원했기 때문에, 실험을 통해 고품질 이미지로 변환할 수 있는 문장을 알아내고자 했고, 'Convert a [class] into a high-resolution color image with a white backgroud' 라는 문장을 찾았습니다. 따라서 스케치를 넣었을 때 해당 캡션이 생성되도록 Sketchy Dataset의 Sketch와 그에 대한 캡션으로 데이터셋을 만들어 이것으로 BLIP을 파인튜닝하였습니다. 그 결과 스케치에 대한 캡션과 생성된 이미지는 아래 오른쪽 그림과 같이 나왔습니다.
 
 <p align="center">
   <img src="README_image/blip_before.jpeg" width="45%" alt="Image 1">
@@ -38,6 +38,7 @@
    - 생성된 캡션을 바탕으로 고해상도 컬러 이미지를 생성
    - 30만 개의 예술 이미지를 사용하여 Adversarial Learning으로 학습된 모델
    - LoRA를 활용해 경량화 학습
+   - inference는 위의 그림과 같음
 
 **4. DINOv2 (Distillation of Knowledge with Neural Operators)**:
 
