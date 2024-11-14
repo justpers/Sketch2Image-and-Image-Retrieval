@@ -60,18 +60,23 @@
 ## 실행 방법
 
 1. **환경 설정**:
+   ```bash
+   git clone https://github.com/justpers/Sketch2Image-and-ImageRetrieval.git
+   ```
+   - CheckPoints를 다운받아 올바른 경로에 놓습니다.
+
    - 프로젝트의 요구 사항을 설치합니다.
      ```bash
      pip install -r requirements.txt
      ```
-
-2. **ADB를 통해 갤럭시 장치와 연결**:
-   - 안드로이드 장치에서 이미지를 `database` 폴더로 복사합니다.
+  
+3. **ADB를 통해 갤럭시 장치와 연결**:
+   - 안드로이드 장치에서 이미지를 `D:\\database` 폴더로 복사합니다.
      ```bash
      python main.py
      ```
 
-3. **스케치 입력 및 이미지 검색**:
+4. **스케치 입력 및 이미지 검색**:
    - 손가락 제스처로 스케치를 그리고, 이를 통해 캡션 생성 및 이미지 검색을 진행합니다.
 
 ## Reference
@@ -80,3 +85,5 @@
 - [Img2Img-Turbo Repository](https://github.com/GaParmar/img2img-turbo)
 - [Sketchy Dataset](https://github.com/CDOTAD/SketchyDatabase)
 - [BLIP_finetunning Dataset](https://huggingface.co/datasets/justpers/BLIP_finetunning)
+  
+   ![Team Member](README_image/member.jpeg)
