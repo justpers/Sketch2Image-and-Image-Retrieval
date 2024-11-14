@@ -26,6 +26,11 @@
 **2. BLIP (Bootstrapped Language-Image Pre-training)**:
    - 멀티모달 모델로, 스케치에 대한 캡션 생성
    - 생성된 캡션을 디퓨전 모델의 프롬프트로 사용
+
+<p align="center">
+  <img src="README_image/blip_before.jpeg" width="45%" alt="Image 1">
+  <img src="README_image/blip_finetunning.jpeg" width="45%" alt="Image 2">
+</p>
   ![Before Finetunning](README_image/blip_before.jpeg)
   ![After Finetunning](README_image/blip_finetunning.jpeg)
 
