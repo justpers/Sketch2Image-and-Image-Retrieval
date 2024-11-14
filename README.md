@@ -21,6 +21,7 @@
      - 네 손가락 -> 빨간색 펜
      - 다섯 손가락 -> 지우개
      - R키 -> 전체 삭제
+    
   ![Sketch Inference](README_image/sketch_inf.jpeg)
 
 **2. BLIP (Bootstrapped Language-Image Pre-training)**:
