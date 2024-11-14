@@ -10,7 +10,7 @@
     - **이미지 검색**: 생성된 이미지를 기반으로 갤러리에서 유사한 이미지를 검색
 
 ## 주요 모델 및 기술
-1. **Mediapipe**:
+**1. Mediapipe**:
    - 손가락 제스처를 추적하여 스케치 생성
    - 한 손가락으로 스케치 저장, 여러 손가락 제스처로 색상 선택 및 지우개 기능 수행
    - 상세:
@@ -21,15 +21,15 @@
      - 다섯 손가락 -> 지우개
      - R키 -> 전체 삭제
 
-2. **BLIP (Bootstrapped Language-Image Pre-training)**:
+**2. BLIP (Bootstrapped Language-Image Pre-training)**:
    - 멀티모달 모델로, 스케치에 대한 캡션 생성
    - 생성된 캡션을 디퓨전 모델의 프롬프트로 사용
 
-3. **Img2Img-Turbo**:
+**3. Img2Img-Turbo**:
    - 생성된 캡션을 바탕으로 고해상도 컬러 이미지를 생성
    - 30만 개의 예술 이미지를 사용하여 Adversarial Learning으로 학습된 모델
 
-4. **DINOv2 (Distillation of Knowledge with Neural Operators)**:
+**4. DINOv2 (Distillation of Knowledge with Neural Operators)**:
    - ViT-H/16을 사용하여 비슷한 이미지 간의 유사도를 측정
    - query 이미지와 가장 유사한 이미지들을 검색하여 갤러리 내에서 가까운 이미지들을 검색
   
