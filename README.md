@@ -52,6 +52,7 @@
 총 125개의 카테고리 중 39개 카테고리 선택
 각 스케치에 대한 텍스트 프롬프트를 추가하여 모델 학습에 활용
 
+
 ## CheckPoints
 
 - [다운로드](https://drive.google.com/drive/folders/16tHzOjyHXhN-VVOLXzvbGTfwh5uv1Sff?usp=sharing)
