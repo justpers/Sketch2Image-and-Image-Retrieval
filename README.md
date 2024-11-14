@@ -63,6 +63,8 @@
   - requirements.txt에 명시
 
 **4. 실행환경**
+  - 로컬 GPU 환경에서 실행이 가능합니다.
+  - 다만, 로컬에 GPU가 없다면 구글 Colab에서 main2.py 실행으로 이미지 재생성과 검색을 구현하실 수 있습니다. 로컬 환경에서 스케치를 그리고, 해당 스케치 경로를 image_path에 입력하면 됩니다.
 
 ## DataSet
 - **Sketchy Dataset**:
