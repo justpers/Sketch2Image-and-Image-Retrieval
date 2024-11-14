@@ -47,18 +47,18 @@
      
      ![DINO Inference](README_image/dino_inf.jpeg)
 ## 프로젝트 환경
-1. 하드웨어 사양
+**1. 하드웨어 사양**
   - GPU:
   - CPU:
   - RAM:
   - 저장공간
-2. 소프트웨어 환경
+**2. 소프트웨어 환경**
   - OS:
   - CUDA:
   - Python
-3. 필수 라이브러리
+**3. 필수 라이브러리**
   - requirements.txt에 명시
-4. 실행환경
+**4. 실행환경**
 
 ## DataSet
 - **Sketchy Dataset**:
@@ -70,12 +70,12 @@
 - [다운로드](https://drive.google.com/drive/folders/16tHzOjyHXhN-VVOLXzvbGTfwh5uv1Sff?usp=sharing)
 
   ## 실행 방법
-  1. **환경 설정**:
-     - 깃허브 내용을 다운받습니다.
-       ```bash
-        git clone https://github.com/justpers/Sketch2Image-and-ImageRetrieval.git
-       ```
-     - CheckPoints에서 가중치를 다운받아 올바른 경로에 놓습니다.
+ 1. **환경 설정**:
+   - 깃허브 내용을 다운받습니다.
+      ```bash
+       git clone https://github.com/justpers/Sketch2Image-and-ImageRetrieval.git
+      ```
+   - CheckPoints에서 가중치를 다운받아 올바른 경로에 놓습니다.
 
    - 프로젝트의 요구 사항을 설치합니다.
      ```bash
