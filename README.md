@@ -45,8 +45,18 @@
 
   ![DINO Inference](README_image/dino_inf.jpeg)
  ## 프로젝트 환경
-- 환경(로컬, GPU 등등)
-- 셋팅방법 각각
+1. 하드웨어 사양
+  - GPU:
+  - CPU:
+  - RAM:
+  - 저장공간 
+2. 소프트웨어 환경
+  - OS:
+  - CUDA:
+  - Python:
+3. 필수 라이브러리
+  - reauirements.txt에 명시
+4. 실행 환경
 
 ## DataSet
 - **Sketchy Dataset**:
