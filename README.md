@@ -42,7 +42,7 @@
    - inference는 위의 그림과 같음
 
 **4. DINOv2 (Distillation of Knowledge with Neural Operators)**:
-   - self-supervised ViT-H/16을 사용해 이미지 임베딩 생성
+   - ViT-H/16모델을 사용해 임베딩 생성
    - 코사인 유사도를 사용해 이미지 간 거리를 계산해 의미론치를 다운받아 올바른 경로에 놓습니다.
 
    - 프로젝트의 요구 사항을 설치합니다.
