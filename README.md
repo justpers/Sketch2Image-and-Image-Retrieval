@@ -49,15 +49,11 @@
 
 ## 프로젝트 환경
 **1. 하드웨어 사양**
-  - GPU:
-  - CPU:
-  - RAM:
-  - 저장공간
+  - GPU: T4
 
 **2. 소프트웨어 환경**
-  - OS:
-  - CUDA:
-  - Python
+  - CUDA: 12.2
+  - Python:3.10.12
 
 **3. 필수 라이브러리**
   - requirements.txt에 명시
