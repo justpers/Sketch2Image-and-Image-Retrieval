@@ -21,7 +21,7 @@ from transformers import BlipForConditionalGeneration, AutoProcessor
 import subprocess
 
 # ADB를 통해 안드로이드 장치에서 DCIM/Camera 폴더 내의 jpg 파일들을 database 폴더로 복사
-def copy_images_from_galaxy(source_folder="/sdcard/DCIM/Camera", destination_folder="D:/database"):
+def copy_images_from_galaxy(source_folder="/sdcard/DCIM/Camera", destination_folder="D:\\database"):
     os.makedirs(destination_folder, exist_ok=True)
     try:
         file_list = subprocess.check_output(['adb', 'shell', 'ls', source_folder]).decode().splitlines()
@@ -77,7 +77,7 @@ os.system(f'python img2img-turbo/src/inference_paired.py --model_name "sketch_to
 # DINOv2 모델을 사용하여 이미지 검색
 args = SimpleNamespace(**{
     'query': "diffusion_output/drawing.png",  
-    'database': "D:/database", 
+    'database': "D:\\database", 
     'output_root': "/content/drive/MyDrive/Last_Dance/Sketch2Image_Retrieval/final_output",
     'model_size': "base",  
     'num': 5,  
