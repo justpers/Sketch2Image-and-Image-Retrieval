@@ -43,42 +43,7 @@
 
 **4. DINOv2 (Distillation of Knowledge with Neural Operators)**:
    - self-supervised ViT-H/16을 사용해 이미지 임베딩 생성
-   - 코사인 유사도를 사용해 이미지 간 거리를 계산해 의미론적으로 비슷한 이미지들을 가깝게 배치
-   - query 이미지와 가장 가까운 이미지를 출력
-
-  ![DINO Inference](README_image/dino_inf.jpeg)
- ## 프로젝트 환경
-1. 하드웨어 사양
-  - GPU:
-  - CPU:
-  - RAM:
-  - 저장공간 
-2. 소프트웨어 환경
-  - OS:
-  - CUDA:
-  - Python:
-3. 필수 라이브러리
-  - reauirements.txt에 명시
-4. 실행 환경
-  - 로컬 GPU 환경에서 실행이 가능합니다.
-  - 다만, 로컬에 GPU가 없다면 구글 Colab에서 main2.py 실행으로 이미지 재생성과 검색을 구현하실 수 있습니다. 로컬 환경에서 스케치를 그리고, 해당 스케치 경로를 image_path에 입력하면 됩니다.
-## DataSet
-- **Sketchy Dataset**:
-- 총 125개의 카테고리 중 39개 카테고리 선택 (카테고리 리스트는 README_image 폴더 안에서 확인 가능)
-- 각 스케치에 대한 텍스트 프롬프트를 추가하여 모델 학습에 활용
-
-## CheckPoints
-
-- [다운로드](https://drive.google.com/drive/folders/16tHzOjyHXhN-VVOLXzvbGTfwh5uv1Sff?usp=sharing)
-  
-## 실행 방법
-
-1. **환경 설정**:
-   - 깃허브 내용을 다운받습니다.
-     ```bash
-     git clone https://github.com/justpers/Sketch2Image-and-ImageRetrieval.git
-     ```
-   - CheckPoints를 다운받아 올바른 경로에 놓습니다.
+   - 코사인 유사도를 사용해 이미지 간 거리를 계산해 의미론치를 다운받아 올바른 경로에 놓습니다.
 
    - 프로젝트의 요구 사항을 설치합니다.
      ```bash
