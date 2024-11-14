@@ -60,9 +60,10 @@
 ## 실행 방법
 
 1. **환경 설정**:
-   ```bash
-   git clone https://github.com/justpers/Sketch2Image-and-ImageRetrieval.git
-   ```
+   - 깃허브 내용을 다운받습니다.
+    ```bash
+    git clone https://github.com/justpers/Sketch2Image-and-ImageRetrieval.git
+    ```
    - CheckPoints를 다운받아 올바른 경로에 놓습니다.
 
    - 프로젝트의 요구 사항을 설치합니다.
