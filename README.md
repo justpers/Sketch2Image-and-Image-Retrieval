@@ -42,6 +42,9 @@
    - inference는 위의 그림과 같음
 
 **4. DINOv2 (Distillation of Knowledge with Neural Operators)**:
+   - self-supervised ViT-H/16을 사용해 이미지 임베딩 생성
+   - 코사인 유사도를 사용해 이미지 간 거리를 계산해 의미론적으로 비슷한 이미지들을 가깝게 배치
+   - query 이미지와 가장 가까운 이미지를 출력
 
   ![DINO Inference](README_image/dino_inf.jpeg)
  ## 프로젝트 환경
