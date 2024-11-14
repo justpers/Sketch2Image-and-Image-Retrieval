@@ -56,7 +56,7 @@
 2. **ADB를 통해 갤럭시 장치와 연결**:
    - 안드로이드 장치에서 이미지를 `database` 폴더로 복사합니다.
      ```bash
-     python main.py  # ADB를 통해 이미지를 로컬에 저장하고 Sketch2Image 시스템 실행
+     python main.py
      ```
 
 3. **스케치 입력 및 이미지 검색**:
