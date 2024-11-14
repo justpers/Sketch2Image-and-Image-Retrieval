@@ -61,9 +61,9 @@
 
 1. **환경 설정**:
    - 깃허브 내용을 다운받습니다.
-    ```bash
-    git clone https://github.com/justpers/Sketch2Image-and-ImageRetrieval.git
-    ```
+     ```bash
+     git clone https://github.com/justpers/Sketch2Image-and-ImageRetrieval.git
+     ```
    - CheckPoints를 다운받아 올바른 경로에 놓습니다.
 
    - 프로젝트의 요구 사항을 설치합니다.
@@ -72,7 +72,7 @@
      ```
   
 3. **ADB를 통해 갤럭시 장치와 연결**:
-   - 안드로이드 장치에서 이미지를 `D:\\database` 폴더로 복사합니다.
+   - 
      ```bash
      python main.py
      ```
