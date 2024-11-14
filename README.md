@@ -8,7 +8,7 @@
     - **스케치 캡셔닝**: 손가락 제스처로 그린 스케치를 설명하는 캡션 생성
     - **디퓨전 모델**: 스케치와 스케치 캡션을 입력으로 받아 고해상도 이미지를 생성
     - **이미지 검색**: 생성된 이미지를 기반으로 갤러리에서 유사한 이미지를 검색
-  ![Project flow](README_image/projectflow.png)
+  ![Project flow](README_image/프로젝트flow.jpeg)
 
 ## 주요 모델 및 기술
 **1. Mediapipe**:
