@@ -21,10 +21,13 @@
      - 네 손가락 -> 빨간색 펜
      - 다섯 손가락 -> 지우개
      - R키 -> 전체 삭제
+  ![Sketch Inference](README_image/sketch_inf.jpeg)
 
 **2. BLIP (Bootstrapped Language-Image Pre-training)**:
    - 멀티모달 모델로, 스케치에 대한 캡션 생성
    - 생성된 캡션을 디퓨전 모델의 프롬프트로 사용
+  ![Before Finetunning](README_image/blip_before.jpeg)
+  ![After Finetunning](README_image/blip_finetunning.jpeg)
 
 **3. Img2Img-Turbo**:
    - 생성된 캡션을 바탕으로 고해상도 컬러 이미지를 생성
@@ -32,7 +35,8 @@
    - LoRA를 활용해 경량화 학습
 
 **4. DINOv2 (Distillation of Knowledge with Neural Operators)**:
-   
+
+  ![DINO Inference](README_image/dino_inf.jpeg)
  ## 프로젝트 환경
 - 환경(로컬, GPU 등등)
 - 셋팅방법 각각
