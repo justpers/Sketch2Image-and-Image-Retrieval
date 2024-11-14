@@ -87,5 +87,7 @@
 - [Img2Img-Turbo Repository](https://github.com/GaParmar/img2img-turbo)
 - [Sketchy Dataset](https://github.com/CDOTAD/SketchyDatabase)
 - [BLIP_finetunning Dataset](https://huggingface.co/datasets/justpers/BLIP_finetunning)
-  
+
+## 팀 소개
+- 저희 팀은 국민대 AI빅데이터융합경영학과 학생들로 이루어져있습니다.
    ![Team Member](README_image/member.jpeg)
