@@ -52,12 +52,15 @@
   - CPU:
   - RAM:
   - 저장공간
+
 **2. 소프트웨어 환경**
   - OS:
   - CUDA:
   - Python
+
 **3. 필수 라이브러리**
   - requirements.txt에 명시
+
 **4. 실행환경**
 
 ## DataSet
@@ -82,13 +85,13 @@
      pip install -r requirements.txt
      ```
   
-3. **ADB를 통해 갤럭시 장치와 연결**:
+2. **ADB를 통해 갤럭시 장치와 연결**:
    - 기기에 ADB를 설치한 후, main 파일을 실행합니다.
      ```bash
      python main.py
      ```
 
-4. **스케치 입력 및 이미지 검색**:
+3. **스케치 입력 및 이미지 검색**:
    - 손가락 제스처로 스케치를 그리고, 이를 통해 캡션 생성 및 이미지 검색을 진행합니다.
 
 ## Reference
