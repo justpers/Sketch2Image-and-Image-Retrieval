@@ -27,12 +27,14 @@
    - 멀티모달 모델로, 스케치에 대한 캡션 생성
    - 생성된 캡션을 디퓨전 모델의 프롬프트로 사용
 
+   - 초기 BLIP 인퍼런스 도출 시, 아래 왼쪽 그림과 같이 'a drawing of ~'로 캡셔닝 되어, 이것을 디퓨전 모델에 넣었을 때 그림체 느낌의 이미지가 생성되었다.
+   - 고품질 이미지가 생성되기를 원했기 때문에, 여러 실험을 통해 'Convert a [class] into a high-resolution color image with a white backgroud' 라는 문장이 들어가면 스케치를 고품질 이미지로 변환할 수 있다는 것을 알아냈다.
+   - 따라서, 스케치를 넣었을 때 해당 캡션이 생성되도록 BLIP을 파인튜닝하였다.
+   - 파인튜닝 후의 캡셔닝과 이미지 생성 결과는 아래 오른쪽 그림과 같다.
 <p align="center">
   <img src="README_image/blip_before.jpeg" width="45%" alt="Image 1">
   <img src="README_image/blip_finetunning.jpeg" width="45%" alt="Image 2">
 </p>
-  ![Before Finetunning](README_image/blip_before.jpeg)
-  ![After Finetunning](README_image/blip_finetunning.jpeg)
 
 **3. Img2Img-Turbo**:
    - 생성된 캡션을 바탕으로 고해상도 컬러 이미지를 생성
