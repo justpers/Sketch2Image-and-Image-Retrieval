@@ -43,7 +43,39 @@
 
 **4. DINOv2 (Distillation of Knowledge with Neural Operators)**:
    - ViT-H/16모델을 사용해 임베딩 생성
-   - 코사인 유사도를 사용해 이미지 간 거리를 계산해 의미론치를 다운받아 올바른 경로에 놓습니다.
+   - 코사인 유사도를 사용해 이미지 간 거리를 계산해 의미론적으로 가까운~
+     
+     ![DINO Inference](README_image/dino_inf.jpeg)
+## 프로젝트 환경
+1. 하드웨어 사양
+  - GPU:
+  - CPU:
+  - RAM:
+  - 저장공간
+2. 소프트웨어 환경
+  - OS:
+  - CUDA:
+  - Python
+3. 필수 라이브러리
+  - requirements.txt에 명시
+4. 실행환경
+
+## DataSet
+- **Sketchy Dataset**:
+  - 총 12개의 카트고리 중 39개 카테고리 선택 (카테고리 리스트는 REAME_image 폴더 안에서 확인가능)
+  - 각 스케치에 대한 텍스트 프롬프트를 추가하여 BLIP 파인튜닝에 활용
+
+## CheckPoints
+
+- [다운로드](https://drive.google.com/drive/folders/16tHzOjyHXhN-VVOLXzvbGTfwh5uv1Sff?usp=sharing)
+
+  ## 실행 방법
+  1. **환경 설정**:
+     - 깃허브 내용을 다운받습니다.
+       ```bash
+        git clone https://github.com/justpers/Sketch2Image-and-ImageRetrieval.git
+       ```
+     - CheckPoints에서 가중치를 다운받아 올바른 경로에 놓습니다.
 
    - 프로젝트의 요구 사항을 설치합니다.
      ```bash
