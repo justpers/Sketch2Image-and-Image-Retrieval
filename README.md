@@ -1,5 +1,6 @@
 # Sketch2Image-and-Image-Retrieval
-2024 D&X:W Conference CV Team
+**2024 D&X:W Conference CV Team**
+
  이 프로젝트는 스케치를 통한 이미지 검색 기능을 구현한 AI 모델입니다. Sketch2Image를 통해 사용자가 갤러리에 저장된 이미지를 검색할 수 있도록 하였으며, Mediapipe, BLIP, Diffusion, DINOv2등의 기술을 사용하였습니다.
 
 <br/>
